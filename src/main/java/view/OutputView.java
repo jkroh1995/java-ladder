@@ -9,6 +9,8 @@ import java.util.Map;
 public class OutputView {
 
     private static final int EACH_COLUMN_LENGTH = 7;
+    private static final String PRINT_RESULT = "%s : %s\n";
+    private static final String BLANK = " ";
 
     public void printError(String message) {
         System.out.println(message);
@@ -23,7 +25,7 @@ public class OutputView {
     public void printResult(List<String> wantLook, Map<String, String> result) {
         printBlankLine();
         for(int i=0;i< wantLook.size();i++){
-            System.out.printf("%s : %s\n",wantLook.get(i), result.get(wantLook.get(i)));
+            System.out.printf(PRINT_RESULT,wantLook.get(i), result.get(wantLook.get(i)));
         }
     }
 
@@ -34,7 +36,7 @@ public class OutputView {
     private void printWinning(Winning winning) {
         for (int number = 0; number < winning.size(); number++) {
             String win = winning.getWinning(number);
-            System.out.print(win + " ".repeat(EACH_COLUMN_LENGTH - win.length()));
+            System.out.print(win + BLANK.repeat(EACH_COLUMN_LENGTH - win.length()));
         }
         printBlankLine();
     }
@@ -51,7 +53,7 @@ public class OutputView {
     private void printPlayer(Players players) {
         for (int number = 0; number < players.size(); number++) {
             String name = players.getPlayerName(number);
-            System.out.print(name + " ".repeat(EACH_COLUMN_LENGTH - name.length()));
+            System.out.print(name + BLANK.repeat(EACH_COLUMN_LENGTH - name.length()));
         }
         printBlankLine();
     }

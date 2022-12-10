@@ -1,4 +1,4 @@
-package util;
+package util.validators;
 
 import domain.player.Players;
 

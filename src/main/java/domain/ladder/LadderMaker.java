@@ -5,9 +5,9 @@ import java.util.Random;
 
 public class LadderMaker {
 
-    private static final String FILL = "-----";
-    private static final String BLANK = "     ";
-    private static final String START = "   ";
+    private static final String FILL = "------";
+    private static final String BLANK = "      ";
+    private static final String START = "  ";
     private static final String DIVIDE = "|";
 
     Random random = new Random();

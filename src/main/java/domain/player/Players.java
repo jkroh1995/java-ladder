@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Players {
+
     List<Player> players = new ArrayList<>();
 
     public Players(List<String>players){

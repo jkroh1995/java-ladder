@@ -8,10 +8,11 @@ public class Winning {
 
     List<String> winning;
 
-    public Winning(String winning){
-        String[]winnings = winning.split(",");
-        for(int i=0;i< winnings.length;i++){
-            winnings[i]=winnings[i].replace(" ","");
+    public Winning(String winning) {
+        String[] winnings = winning.split(",");
+        for (int index = 0; index < winnings.length; index++) {
+            winnings[index] = winnings[index].replace(" ", "");
+            winnings[index] = " " + winnings[index];
         }
         this.winning = new ArrayList<>(Arrays.asList(winnings));
     }

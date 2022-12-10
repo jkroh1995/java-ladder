@@ -1,4 +1,4 @@
-package util;
+package util.validators;
 
 public class HeightValidator {
 

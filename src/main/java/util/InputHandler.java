@@ -4,6 +4,10 @@ import domain.player.Players;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import util.validators.HeightValidator;
+import util.validators.NameValidator;
+import util.validators.ResultValidator;
+import util.validators.WinningValidator;
 import view.InputView;
 import view.OutputView;
 
